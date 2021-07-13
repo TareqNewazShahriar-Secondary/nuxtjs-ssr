@@ -8,18 +8,19 @@ exports.handler = async function(event, context) {
    _context = context;
 
    return new Promise((resolve, reject) => {
+      const nuxtConfig = {
+         dev: false,
+         buildDir: 'nuxt'
+      }
+
       try {
-         const nuxtConfig = {
-            dev: false,
-            buildDir: 'nuxt'
-         }
          const nuxt = new Nuxt(nuxtConfig);
          nuxt.renderRoute('/')
             .then(result => resolve(responseObject(result.html)))
             .catch(err => reject(responseObject(err)));
       }
       catch(err) {
-         resolve(responseObject(`${err.toString()}, Nuxt: ${Object.keys(Nuxt).join(' // ')}`));
+         resolve(responseObject(`${err.toString()}, new Nuxt: ${new Nuxt(nuxtConfig)}`));
       }
    });
 }
