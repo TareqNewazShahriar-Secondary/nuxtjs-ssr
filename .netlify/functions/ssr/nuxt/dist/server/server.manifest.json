@@ -1,10 +1,12 @@
 {
   "entry": "server.js",
   "files": {
+    "pages/index-copy.js": "pages/index-copy.js",
     "pages/index.js": "pages/index.js",
     "server.js": "server.js"
   },
   "maps": {
+    "pages/index-copy.js": "pages/index-copy.js.map",
     "pages/index.js": "pages/index.js.map",
     "server.js": "server.js.map"
   }

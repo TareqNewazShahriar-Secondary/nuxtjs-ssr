@@ -1,9 +1,16 @@
 [
   {
+    "name": "index-copy",
+    "path": "/index-copy",
+    "component": "F:\\\\Project_Mics\\\\Projects-Sample\\\\nuxtjs-ssr\\\\pages\\\\index-copy.vue",
+    "chunkName": "pages/index-copy",
+    "_name": "_0f8dd24c"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "H:\\\\Downloads\\\\nuxt-ssr\\\\pages\\\\index.vue",
+    "component": "F:\\\\Project_Mics\\\\Projects-Sample\\\\nuxtjs-ssr\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_2e2e9451"
+    "_name": "_ad28ab10"
   }
 ]

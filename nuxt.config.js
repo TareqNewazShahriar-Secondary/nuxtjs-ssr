@@ -20,7 +20,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  buildDir: '__functions/nuxt',
+  buildDir: '.netlify/functions/ssr/nuxt',
   build: {
    publicPath: '/',
    extractCss: true,
