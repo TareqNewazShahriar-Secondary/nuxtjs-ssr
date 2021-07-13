@@ -20,7 +20,7 @@ exports.handler = async function(event, context) {
             .catch(err => reject(responseObject(err)));
       }
       catch(err) {
-         resolve(responseObject(`${err.toString()}, new Nuxt: ${new Nuxt(nuxtConfig)}`));
+         resolve(responseObject(`${err.toString()}, new Nuxt: ${Object.entries(new Nuxt(nuxtConfig)).join(' || ')}`));
       }
    });
 }
@@ -29,8 +29,7 @@ function responseObject(result) {
    return {
       statusCode: 200,
       headers: {
-         'Content-Type': 'text/html',
-         'x-explore': `${__dirname} ||| ${Object.entries(_event).join(' / ')} ||| ${Object.entries(_context).join(' / ')}`
+         'Content-Type': 'text/html'
       },
       body: result
    };
