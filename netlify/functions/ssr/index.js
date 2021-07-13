@@ -1,4 +1,4 @@
-const { loadNuxt } = require('nuxt')
+const {Nuxt} = require('nuxt')
 
 exports.handler = async function(event, context) {
 
