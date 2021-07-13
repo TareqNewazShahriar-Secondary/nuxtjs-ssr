@@ -8,7 +8,7 @@ exports.handler = async function(event, context) {
    const nuxt = new Nuxt(nuxtConfig);
 
    return new Promise((resolve, reject) => {
-      nuxt.renderroute('/')
+      nuxt.renderRoute('/')
          .then(result => {
             resolve({
                statusCode: 200,
