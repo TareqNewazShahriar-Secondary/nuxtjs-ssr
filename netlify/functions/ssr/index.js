@@ -1,11 +1,6 @@
-const {Nuxt} = require('nuxt');
-
-let _event;
-let _context;
+const { loadNuxt } = require('nuxt')
 
 exports.handler = async function(event, context) {
-   _event = event;
-   _context = context;
 
    return new Promise((resolve, reject) => {
       const nuxtConfig = {
@@ -20,7 +15,7 @@ exports.handler = async function(event, context) {
             .catch(err => reject(responseObject(err)));
       }
       catch(err) {
-         resolve(responseObject(`${err.toString()}, new Nuxt: ${Object.entries(new Nuxt(nuxtConfig)).join(' || ')}`));
+         resolve(responseObject(`${err.toString()} /// new Nuxt: ${Object.entries(new Nuxt(nuxtConfig)).join(' || ')} /// ${Object.entries(context).join(' || ')}`));
       }
    });
 }
