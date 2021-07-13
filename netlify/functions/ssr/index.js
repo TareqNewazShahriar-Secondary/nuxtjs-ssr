@@ -19,7 +19,7 @@ exports.handler = async function(event, context) {
             .catch(err => reject(responseObject(err)));
       }
       catch(err) {
-         reject(`${err.toString()}, !Nuxt: ${!Nuxt}`);
+         resolve(responseObject(`${err.toString()}, Nuxt: ${Object.keys(Nuxt).join(' // ')}`));
       }
    });
 }
