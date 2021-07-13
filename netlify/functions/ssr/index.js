@@ -15,7 +15,7 @@ exports.handler = async function(event, context) {
             .catch(err => reject(responseObject(err)));
       }
       catch(err) {
-         resolve(responseObject(`${err.toString()} /// new Nuxt: ${Object.entries(new Nuxt(nuxtConfig)).join(' || ')} /// ${Object.entries(context).join(' || ')}`));
+         resolve(responseObject(`${err.toString()} /// new Nuxt: ${Object.entries(new Nuxt(nuxtConfig)).join(' || ')} /// ${Object.entries(context).join(' || ')}  /// ${Object.entries(event).join(' || ')}`));
       }
    });
 }
