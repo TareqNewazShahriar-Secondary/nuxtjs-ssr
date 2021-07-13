@@ -1,0 +1,15 @@
+{
+   "name": "functions",
+   "description": "",
+   "dependencies": {
+      "clone": "^2.1.2",
+      "debug": "^4.3.2",
+      "es6-promise": "^4.2.8",
+      "express": "^4.17.1",
+      "nuxt": "^2.15.7",
+      "vue": "^2.6.14",
+      "vue-meta": "^2.4.0",
+      "vue-router": "^3.5.2",
+      "vuex": "^3.6.2"
+   }
+}
