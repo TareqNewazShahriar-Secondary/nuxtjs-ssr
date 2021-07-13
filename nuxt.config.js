@@ -20,9 +20,8 @@ module.exports = {
   /*
   ** Build configuration
   */
-  buildDir: '.netlify/functions/ssr/nuxt',
+  buildDir: 'netlify/functions/ssr/nuxt',
   build: {
-   publicPath: '/',
    extractCss: true,
     /*
     ** Run ESLint on save

@@ -104,7 +104,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/_nuxt/";
 /******/
 /******/ 	// uncaught error handler for webpack runtime
 /******/ 	__webpack_require__.oe = function(err) {
@@ -491,7 +491,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(5).default
 module.exports.__inject__ = function (context) {
-  add("42a065e4", content, true, context)
+  add("e278e314", content, true, context)
 };
 
 /***/ }),
@@ -508,7 +508,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(5).default
 module.exports.__inject__ = function (context) {
-  add("5eef8be4", content, true, context)
+  add("60c74ade", content, true, context)
 };
 
 /***/ }),
@@ -638,10 +638,10 @@ var external_ufo_ = __webpack_require__(1);
 var external_node_fetch_ = __webpack_require__(11);
 var external_node_fetch_default = /*#__PURE__*/__webpack_require__.n(external_node_fetch_);
 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/middleware.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/middleware.js
 const middleware = {};
 /* harmony default export */ var nuxt_middleware = (middleware);
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/utils.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/utils.js
 
  // window.{{globals.loadedCallback}} hook
 // Useful for jsdom testing or plugins (https://github.com/tmpvar/jsdom#dealing-with-asynchronous-script-loading)
@@ -829,7 +829,7 @@ async function setContext(app, context) {
   // If context not defined, create it
   if (!app.context) {
     app.context = {
-      isStatic: true,
+      isStatic: false,
       isDev: false,
       isHMR: false,
       app,
@@ -1256,7 +1256,7 @@ function setScrollRestoration(newVal) {
     window.history.scrollRestoration = newVal;
   } catch (e) {}
 }
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/mixins/fetch.server.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/mixins/fetch.server.js
 
 
 
@@ -1337,7 +1337,7 @@ var external_vue_no_ssr_default = /*#__PURE__*/__webpack_require__.n(external_vu
 var external_vue_router_ = __webpack_require__(7);
 var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vue_router_);
 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/router.scrollBehavior.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/router.scrollBehavior.js
 
 
 if (false) {}
@@ -1407,7 +1407,7 @@ function shouldScrollToTop(route) {
     });
   });
 });
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/router.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/router.js
 
 
 
@@ -1462,7 +1462,7 @@ function createRouter(ssrContext, config) {
 
   return router;
 }
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-child.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-child.js
 /* harmony default export */ var nuxt_child = ({
   name: 'NuxtChild',
   functional: true,
@@ -1548,14 +1548,14 @@ function createRouter(ssrContext, config) {
 });
 const transitionsKeys = ['name', 'mode', 'appear', 'css', 'type', 'duration', 'enterClass', 'leaveClass', 'appearClass', 'enterActiveClass', 'enterActiveClass', 'leaveActiveClass', 'appearActiveClass', 'enterToClass', 'leaveToClass', 'appearToClass'];
 const listenersKeys = ['beforeEnter', 'enter', 'afterEnter', 'enterCancelled', 'beforeLeave', 'leave', 'afterLeave', 'leaveCancelled', 'beforeAppear', 'appear', 'afterAppear', 'appearCancelled'];
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./.netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=template&id=00496562&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=template&id=aa077566&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"__nuxt-error-page"},[_vm._ssrNode("<div class=\"error\">","</div>",[_vm._ssrNode("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"90\" height=\"90\" fill=\"#DBE1EC\" viewBox=\"0 0 48 48\"><path d=\"M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z\"></path></svg> <div class=\"title\">"+_vm._ssrEscape(_vm._s(_vm.message))+"</div> "),(_vm.statusCode === 404)?_vm._ssrNode("<p class=\"description\">","</p>",[(typeof _vm.$route === 'undefined')?_vm._ssrNode("<a href=\"/\" class=\"error-link\">","</a>"):_c('NuxtLink',{staticClass:"error-link",attrs:{"to":"/"}},[_vm._v("Back to the home page")])],1):_vm._e(),_vm._ssrNode(" <div class=\"logo\"><a href=\"https://nuxtjs.org\" target=\"_blank\" rel=\"noopener\">Nuxt</a></div>")],2)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=template&id=00496562&
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=template&id=aa077566&
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./.netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1606,12 +1606,12 @@ var staticRenderFns = []
   }
 
 });
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-error.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_nuxt_errorvue_type_script_lang_js_ = (nuxt_errorvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(2);
 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-error.vue
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-error.vue
 
 
 
@@ -1631,12 +1631,12 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "487942b7"
+  "7452ec1e"
   
 )
 
 /* harmony default export */ var nuxt_error = (nuxt_error_component.exports);
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt.js
 
 
 
@@ -1740,7 +1740,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   }
 
 });
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./.netlify/functions/ssr/nuxt/components/nuxt-loading.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./netlify/functions/ssr/nuxt/components/nuxt-loading.vue?vue&type=script&lang=js&
 /* harmony default export */ var nuxt_loadingvue_type_script_lang_js_ = ({
   name: 'NuxtLoading',
 
@@ -1913,9 +1913,9 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   }
 
 });
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-loading.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-loading.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_nuxt_loadingvue_type_script_lang_js_ = (nuxt_loadingvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-loading.vue
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-loading.vue
 var nuxt_loading_render, nuxt_loading_staticRenderFns
 
 
@@ -1935,7 +1935,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "f4eb23aa"
+  "20b2cee5"
   
 )
 
@@ -1971,7 +1971,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var layouts_default = (default_component.exports);
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/App.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/App.js
 
 
 
@@ -2052,10 +2052,6 @@ const layouts = {
 
     isFetching() {
       return this.nbFetching > 0;
-    },
-
-    isPreview() {
-      return Boolean(this.$options.previewData);
     }
 
   },
@@ -2155,7 +2151,7 @@ const layouts = {
     NuxtLoading: nuxt_loading
   }
 });
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/index.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/index.js
 
 
 
@@ -2398,7 +2394,7 @@ async function createApp(ssrContext, config = {}) {
 }
 
 
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/components/nuxt-link.server.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/components/nuxt-link.server.js
 
 /* harmony default export */ var nuxt_link_server = ({
   name: 'NuxtLink',
@@ -2414,7 +2410,7 @@ async function createApp(ssrContext, config = {}) {
     }
   }
 });
-// CONCATENATED MODULE: ./.netlify/functions/ssr/nuxt/server.js
+// CONCATENATED MODULE: ./netlify/functions/ssr/nuxt/server.js
 
 
 
