@@ -7,23 +7,21 @@ exports.handler = async function(event, context) {
    _event = event;
    _context = context;
 
-   const nuxtConfig = {
-      dev: false,
-      buildDir: 'nuxt'
-   }
-
-   try {
-      const nuxt = new Nuxt(nuxtConfig);
-
-      return new Promise((resolve, reject) => {
+   return new Promise((resolve, reject) => {
+      try {
+         const nuxtConfig = {
+            dev: false,
+            buildDir: 'nuxt'
+         }
+         const nuxt = new Nuxt(nuxtConfig);
          nuxt.renderRoute('/')
             .then(result => resolve(responseObject(result.html)))
             .catch(err => reject(responseObject(err)));
-      });
-   }
-   catch(err) {
-      return responseObject(`${err.toString()} ||| ${Object.entries(Nuxt).join(' // ')} ||| ${Object.entries(nuxt).join(' // ')}`);
-   }
+      }
+      catch(err) {
+         return responseObject(`${err.toString()} ||| ${Object.entries(Nuxt).join(' // ')} ||| ${!nuxt || Object.entries(nuxt).join(' // ')}`);
+      }
+   });
 }
 
 function responseObject(result) {
