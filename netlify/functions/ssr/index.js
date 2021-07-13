@@ -27,9 +27,10 @@ exports.handler = async function(event, context) {
 function responseObject(result) {
    return {
       statusCode: 200,
-      headers: { 'Content-Type': 'text/html' },
+      headers: {
+         'Content-Type': 'text/html',
+         'x-explore': `${__dirname} ||| ${Object.entries(_event).join(' / ')} ||| ${Object.entries(_context).join(' / ')}`
+      },
       body: result
    };
-
-   // 'x-explore': `${__dirname} ||| ${Object.entries(_event).join(' / ')} ||| ${Object.entries(_context).join(' / ')}`
 }
