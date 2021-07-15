@@ -1,6 +1,4 @@
-# src
-
-> Nuxt.js project
+# NuxtJS for Server-side Rendered App
 
 ## Build Setup
 
